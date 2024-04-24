@@ -1,6 +1,5 @@
-# Tarea 1 Desarrollo Orientado a Objetos
-
+Tarea 1: Desarrollo Orientado a Objetos
 Autores
--Rodrigo Bascuñán León
--Tomás Gutiérrez Bizama
--Martín Fuentealba Bizama
+Rodrigo Bascuñán León
+Tomás Gutiérrez Bizama
+Martín Fuentealba Bizama
