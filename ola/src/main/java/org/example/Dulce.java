@@ -20,7 +20,5 @@ public abstract class Dulce extends Producto{
     public void setSabor(String sabor) {
         this.sabor = sabor;
     }
-    public String sonsumir(){
-        return "Comiendo" +getNombre();
-    }
+    public String consumir();
 }
