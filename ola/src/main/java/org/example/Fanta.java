@@ -1,8 +1,8 @@
 package org.example;
 
-public class Sprite extends Bebida {
+public class Fanta extends Bebida {
     // Constructor
-    public Sprite(int codigo, String nombre, int precio, String marca) {
+    public Fanta(int codigo, String nombre, int precio, String marca) {
         super(codigo, nombre, precio, marca);
     }
 

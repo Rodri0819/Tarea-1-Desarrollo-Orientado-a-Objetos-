@@ -1,4 +1,7 @@
 package org.example;
+/**
+ * HAY QUE CAMBIAR EL METODO ARRYLIST AND LIST POR EL METODO PROPUESTO EN LA PAUTA
+**/
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,25 +10,25 @@ public class Expendedor {
     public static final int SPRITE = 2;
 
     private Deposito<Moneda> monedaVueltas;
-    private List<Deposito<Bebida>> bebidas;
+    private List<Deposito<Producto>> productos;
     private int precioBebidas;
 
-    public Expendedor(int numBebidas, int precioBebidas) {
+    public Expendedor(int numProductos, int precioBebidas) {
         this.precioBebidas = precioBebidas;
-        bebidas = new ArrayList<>();
+        productos = new ArrayList<>();
         monedaVueltas = new Deposito<>();
 
         for (int i = 0; i < 2; i++) {
-            bebidas.add(new Deposito<Bebida>());
+            productos.add(new Deposito<Producto>());
         }
 
-        for (int i = 0; i < numBebidas; i++) {
-            bebidas.get(COCA - 1).add(new CocaCola(i));
-            bebidas.get(SPRITE - 1).add(new Sprite(i));
+        for (int i = 0; i < numProductos; i++) {
+            productos.get(COCA - 1).add(new CocaCola(i, "CocaCola", 1000, "CocaCola"));
+            productos.get(SPRITE - 1).add(new Sprite(i, "Sprite", 800, "Sprite"));
         }
     }
 
-    public Bebida comprarBebida(Moneda m, int cual) {
+    public Producto comprarProducto(Moneda m, int cual) {
         if (m == null || cual < COCA || cual > SPRITE) {
             if (m != null) {
                 monedaVueltas.add(m);
@@ -33,8 +36,8 @@ public class Expendedor {
             return null;
         }
 
-        Deposito<Bebida> depositoBebida = bebidas.get(cual - 1);
-        if (depositoBebida.isEmpty()) {
+        Deposito<Producto> depositoProducto = productos.get(cual - 1);
+        if (depositoProducto.isEmpty()) {
             monedaVueltas.add(m);
             return null;
         }
@@ -51,7 +54,7 @@ public class Expendedor {
             cambio -= 100;
         }
 
-        return depositoBebida.get();
+        return depositoProducto.get();
     }
 
     public Moneda getVuelto() {
