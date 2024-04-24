@@ -1,12 +1,14 @@
 package org.example;
 
 public class CocaCola extends Bebida {
-    public CocaCola(int serie) {
-        super(serie);
+    // Constructor
+    public CocaCola(int codigo, String nombre, int precio, String marca) {
+        super(codigo, nombre, precio, marca);
     }
 
+    // Método sobreescrito
     @Override
-    public String beber() {
-        return "cocacola";
+    public String consumir() {
+        return "Bebiendo CocaCola";
     }
 }

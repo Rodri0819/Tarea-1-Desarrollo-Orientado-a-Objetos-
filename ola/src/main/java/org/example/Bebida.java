@@ -1,15 +1,30 @@
 package org.example;
 
-public abstract class Bebida {
-    private int serie;
+/**
+ * Clase abstracta que representa una bebida.
+ * Extiende de la clase Producto.
+ */
+public abstract class Bebida extends Producto {
+    // Variables
+    private String marca;
 
-    public Bebida(int serie) {
-        this.serie = serie;
+    //Constructor
+    public Bebida(int codigo, String nombre, int precio, String marca) {
+        super(codigo, nombre, precio);
+        this.marca = marca;
     }
 
-    public int getSerie() {
-        return serie;
+    /**Seter y Getter**/
+    public String getMarca() {
+        return marca;
     }
 
-    public abstract String beber();
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+   //Metodo abstracto para consumir bebida
+    @Override
+    public abstract String consumir();
 }
+
