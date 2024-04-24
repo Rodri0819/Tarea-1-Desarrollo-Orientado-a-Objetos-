@@ -2,5 +2,5 @@
 
 Autores
 -Rodrigo Bascuñán León
--Tomas Guiterrez Bizama
--Martin Fuentealba Bizama
+-Tomás Gutiérrez Bizama
+-Martín Fuentealba Bizama
