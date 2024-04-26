@@ -1,10 +1,5 @@
 package org.example;
 
-/**
- * Clase abstracta que representa un Dulce.
- * Extiende de la clase Producto.
- */
-
 public abstract class Dulce extends Producto{
     private String sabor;
 
@@ -20,8 +15,7 @@ public abstract class Dulce extends Producto{
     public void setSabor(String sabor) {
         this.sabor = sabor;
     }
-
-    public String consumir() {
-        return null;
+    public String consumir(){
+        return "Comiendo" +getNombre();
     }
 }
