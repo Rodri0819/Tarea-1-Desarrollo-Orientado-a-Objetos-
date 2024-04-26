@@ -4,10 +4,10 @@ public class Comprador {
     private String sonido;
     private int vuelto;
 
-    public Comprador(Moneda m, int cualBebida, Expendedor exp) {
-        Bebida bebida = exp.comprarBebida(m, cualBebida);
-        if (bebida != null) {
-            sonido = bebida.beber();
+    public Comprador(Moneda m, int cualProducto, Expendedor exp) {  // Cambiar cualBebida a cualProducto
+        Producto producto = exp.comprarProducto(m, cualProducto);  // Llamar a comprarProducto en lugar de comprarBebida
+        if (producto != null) {
+            sonido = producto.consumir();  // Llamar al método consumir() de Producto
         } else {
             sonido = null;
         }
