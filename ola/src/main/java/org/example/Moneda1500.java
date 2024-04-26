@@ -1,10 +1,6 @@
 package org.example;
 
-public class Moneda1500 extends Moneda {
-    public Moneda1500() {
-        super();
-    }
-
+class Moneda1500 extends Moneda {
     @Override
     public int getValor() {
         return 1500;

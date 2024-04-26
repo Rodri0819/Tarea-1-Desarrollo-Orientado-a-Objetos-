@@ -1,11 +1,11 @@
 package org.example;
 
-public abstract class Moneda {
-    public Moneda() {}
-
+abstract class Moneda implements Comparable<Moneda> {
     public abstract int getValor();
 
-    public Moneda getSerie() {
-        return this;
+    @Override
+    public int compareTo(Moneda otra) {
+        return Integer.compare(this.getValor(), otra.getValor());
     }
 }
+
