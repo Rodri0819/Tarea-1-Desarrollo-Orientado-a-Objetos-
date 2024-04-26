@@ -5,15 +5,15 @@ import java.util.List;
 public class Deposito<T> {
     private List<T> items = new ArrayList<>();
 
+    public void add(T item) {
+        items.add(item);
+    }
+
     public T get() {
         if (!items.isEmpty()) {
             return items.remove(0);
         }
         return null;
-    }
-
-    public void add(T item) {
-        items.add(item);
     }
 
     public boolean isEmpty() {
