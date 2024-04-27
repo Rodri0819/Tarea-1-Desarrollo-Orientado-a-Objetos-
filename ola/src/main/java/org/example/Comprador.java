@@ -1,6 +1,6 @@
 package org.example;
 
-class Comprador {
+public class Comprador {
     private String sonido;
     private int vuelto;
 

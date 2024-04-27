@@ -14,7 +14,7 @@ public abstract class Bebida extends Producto {
         this.marca = marca;
     }
 
-    /**Seter y Getter**/
+    /**Setter y Getter**/
     public String getMarca() {
         return marca;
     }

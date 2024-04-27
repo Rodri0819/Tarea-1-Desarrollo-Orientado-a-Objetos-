@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-class Expendedor {
+public class Expendedor {
     public static final int COCA = 1;
     public static final int SPRITE = 2;
     public static final int FANTA = 3;

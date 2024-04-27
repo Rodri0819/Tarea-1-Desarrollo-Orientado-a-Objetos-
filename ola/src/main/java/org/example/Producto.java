@@ -16,7 +16,7 @@ public abstract class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
-    /**Seters y Getters**/
+    /**Setters y Getters**/
     public int getCodigo() {
         return codigo;
     }
