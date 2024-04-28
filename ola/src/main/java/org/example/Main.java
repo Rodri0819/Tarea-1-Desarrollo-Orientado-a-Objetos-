@@ -19,7 +19,7 @@ public class Main {
             try {
                 Comprador comprador = new Comprador(moneda1500, productos[i], expendedor);
                 System.out.println("Comprador compró: " + nombresProductos[i]);
-                System.out.println("Producto consumido: " + comprador.queBebiste());
+                System.out.println(comprador.queBebiste());
                 System.out.println("Vuelto del comprador: " + comprador.cuantoVuelto() + "\n");
             } catch (NoHayProductoException | PagoIncorrectoException | PagoInsuficienteException e) {
                 System.out.println("Error al comprar " + nombresProductos[i] + ": " + e.getMessage());
